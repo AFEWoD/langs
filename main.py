@@ -56,7 +56,7 @@ result = FloydWarshal.ProcessFloydWarshal( weights )
 
 output = open( ( sys.argv[2] ), 'w' )
 for a in result :
-	for b in row :
+	for b in a :
 		output.write( str( '{0:.7f}'.format( b ) ) + ',' )
 
 	output.write('\n')
